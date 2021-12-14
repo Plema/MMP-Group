@@ -1,0 +1,431 @@
+.footer {
+  z-index: 9;
+  padding: 0 20px;
+  position: relative;
+  background: #050505;
+  .footer_content {
+    padding: 38px 0 48px;
+    .logo {
+      width: 110px;
+      display: block;
+      margin: 0 auto 28px;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    h5 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 30px;
+      text-align: center;
+    }
+    .addres {
+      margin-bottom: 33px;
+      h5 {
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 30px;
+        text-align: center;
+      }
+      a {
+        display: none;
+      }
+    }
+    .cont {
+      margin-bottom: 40px;
+      h5 {
+        margin-bottom: 14px;
+      }
+      ul {
+        width: 255px;
+        margin: 0 auto;
+        li {
+          margin-bottom: 16px;
+          &:first-child {
+            a {
+              i {
+                font-size: 22px;
+              }
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            font-size: 18px;
+            color: #ffffff;
+            display: flex;
+            line-height: 30px;
+            font-weight: normal;
+            align-items: center;
+            i {
+              font-size: 15px;
+              color: #ffffff;
+              margin-right: 17px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    .watch {
+      margin-bottom: 38px;
+      h5 {
+        margin-bottom: 14px;
+      }
+      ul {
+        width: 225px;
+        margin: 0 auto;
+        position: relative;
+        padding-left: 37px;
+        &::after {
+          content: '\e808';
+          top: 5px;
+          left: 2px;
+          font-size: 20px;
+          color: #ffffff;
+          position: absolute;
+          font-family: 'fontello';
+        }
+        li {
+          &:last-child {
+            margin-bottom: 0;
+          }
+          font-size: 18px;
+          color: #ffffff;
+          line-height: 30px;
+          font-weight: normal;
+          align-items: center;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    .social {
+      margin-bottom: 46px;
+      h5 {
+        margin-bottom: 15px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          margin: 0 10px;
+          border-radius: 5px;
+          background: #ffffff;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            display: flex;
+          }
+        }
+      }
+    }
+    .sales {
+      h5 {
+        margin-bottom: 26px;
+      }
+      .coll {
+        height: 52px;
+        display: flex;
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 22px;
+        padding: 5px 20px;
+        border-radius: 5px;
+        width: max-content;
+        align-items: center;
+        margin: 0 auto 45px;
+        background: #f9b043;
+        justify-content: center;
+        border: 2px solid #f9b043;
+        transition: all 0.3s;
+        i {
+          font-size: 15px;
+          margin-right: 10px;
+        }
+        &:hover {
+          color: #f9b043;
+          background: transparent;
+        }
+      }
+      .polit {
+        margin: 0 auto;
+        display: flex;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 30px;
+        width: max-content;
+        text-align: center;
+        transition: all 0.3s;
+        text-decoration-line: underline;
+        &:hover {
+          background: #f9b043;
+        }
+      }
+    }
+  }
+  .footer_bottom {
+    padding: 26px 0 25px;
+    border-top: 2px solid rgba(255, 255, 255, 0.46);
+    p {
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .developer {
+      font-size: 16px;
+      display: flex;
+      color: #ffffff;
+      line-height: 22px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      a {
+        color: #fff;
+        display: flex;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 25px;
+        align-items: center;
+        text-decoration: underline;
+        img {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 0 20px;
+    .footer_content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .logo {
+        width: 100%;
+        img {
+          width: 110px;
+          margin: 0 auto;
+        }
+      }
+      .addres {
+        width: 50%;
+      }
+      .cont {
+        width: 50%;
+      }
+      .watch {
+        width: 50%;
+      }
+      .social {
+        width: 50%;
+      }
+      .sales {
+        width: 100%;
+      }
+    }
+    .footer_bottom {
+      p {
+        .br-mob {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .footer_content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .addres {
+        width: 25%;
+        padding-right: 30px;
+        h5 {
+          text-align: left;
+        }
+        p {
+          text-align: left;
+        }
+      }
+      .cont {
+        width: 28%;
+        text-align: left;
+        padding-right: 30px;
+        h5 {
+          text-align: left;
+        }
+        ul {
+          margin: 0;
+          width: auto;
+        }
+      }
+      .watch {
+        width: 25%;
+        text-align: left;
+        padding-right: 30px;
+        h5 {
+          text-align: left;
+        }
+        ul {
+          margin: 0;
+          width: auto;
+        }
+      }
+      .social {
+        width: 22%;
+        text-align: left;
+        padding-right: 30px;
+        h5 {
+          text-align: left;
+        }
+        ul {
+          margin: 0;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    padding: 0 30px;
+    .footer_content {
+      padding: 38px 0 25px;
+      justify-content: flex-start;
+      .logo {
+        margin: 0;
+        width: 12%;
+        img {
+          margin: 0;
+        }
+      }
+      .addres {
+        width: 25%;
+      }
+      .cont {
+        width: 23%;
+      }
+      .watch {
+        width: 20%;
+      }
+      .social {
+        width: 20%;
+      }
+      .sales {
+        .coll {
+          margin: 0 auto 10px;
+        }
+      }
+    }
+    .footer_bottom {
+      display: flex;
+      justify-content: center;
+      p {
+        margin: 0 50px 0 0;
+      }
+      .developer {
+        margin: 0 0 0 50px;
+      }
+    }
+  }
+  @media (min-width: 1320px) {
+  }
+  @media (min-width: 1400px) {
+    padding: 0 35px;
+  }
+  @media (min-width: 1600px) {
+    padding: 0 45px;
+    .footer_content {
+      padding: 80px 0 42px;
+      h5 {
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      .logo {
+        img {
+          width: 156px;
+          margin: 6px 0 0;
+        }
+      }
+      .addres {
+        width: 21.8%;
+        margin-bottom: 0;
+        h5 {
+          margin-bottom: 16px;
+        }
+        p {
+          font-size: 18px;
+          margin-bottom: 35px;
+        }
+        a {
+          display: flex;
+          font-size: 20px;
+          color: #ffffff;
+          line-height: 36px;
+          width: max-content;
+          text-align: center;
+          transition: all 0.3s;
+          text-decoration-line: underline;
+          &:hover {
+            background: #f9b043;
+          }
+        }
+      }
+      .cont {
+        width: 16.8%;
+        margin-bottom: 0;
+        h5 {
+          margin-bottom: 16px;
+        }
+        ul {
+          li {
+            a {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .watch {
+        width: 18.5%;
+        margin-bottom: 0;
+        h5 {
+          margin-bottom: 16px;
+        }
+        ul {
+          li {
+            font-size: 20px;
+          }
+        }
+      }
+      .social {
+        width: 14%;
+        margin-bottom: 0;
+        h5 {
+          margin-bottom: 16px;
+        }
+      }
+      .sales {
+        width: 16.2%;
+        h5 {
+          margin-bottom: 24px;
+        }
+        .polit {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (min-width: 1800px) {
+    padding: 0 48px;
+  }
+}
