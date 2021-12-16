@@ -3234,22 +3234,34 @@
           .text {
             background: rgba(0, 0, 0, 0.54);
             backdrop-filter: blur(4px);
+            h3 {
+              transform: translate(0, 0);
+            }
             p {
               display: block;
+              opacity: 1;
             }
             a {
               display: inline-block;
+              opacity: 1;
             }
           }
         }
         .text {
           background: rgba(0, 0, 0, 0);
           backdrop-filter: blur(0);
+          h3 {
+            transform: translate(0, 70px);
+          }
           p {
-            display: none;
+            // display: none;
+            opacity: 0;
+            display: block;
           }
           a {
-            display: none;
+            // display: none;
+            display: inline-block;
+            opacity: 0;
           }
         }
       }
