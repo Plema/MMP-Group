@@ -34,34 +34,6 @@ $(document).ready(function () {
     $('.cloze-menu').toggleClass('active')
   })
 
-  $('.close').on('click', function (event) {
-    $('.popup').removeClass('active')
-  })
-
-  $('.close_popup').on('click', function (event) {
-    $('.popup').removeClass('active')
-  })
-
-  $('.house_layouts_js').on('click', function (event) {
-    $('.house_layouts').addClass('active')
-  })
-
-  $('.calculation_js').on('click', function (event) {
-    $('.calculation').addClass('active')
-  })
-
-  $('.installment_js').on('click', function (event) {
-    $('.installment').addClass('active')
-  })
-
-  $('.mortgage_js').on('click', function (event) {
-    $('.mortgage').addClass('active')
-  })
-
-  $('.video_js').on('click', function (event) {
-    $('.video').addClass('active')
-  })
-
   jcf.replaceAll()
 
   var numbersSlider = $('.numbers_slider')
@@ -451,5 +423,33 @@ $(document).ready(function () {
     } else {
       $('.to-up').removeClass('show')
     }
+  })
+
+  $('.close').on('click', function (event) {
+    $('.popup').removeClass('active')
+  })
+
+  $('.close_popup').on('click', function (event) {
+    $('.popup').removeClass('active')
+  })
+
+  $('.house_layouts_js').on('click', function (event) {
+    $('.house_layouts').addClass('active')
+  })
+
+  $('.calculation_js').on('click', function (event) {
+    $('.calculation').addClass('active')
+  })
+
+  $('.installment_js').on('click', function (event) {
+    $('.installment').addClass('active')
+  })
+
+  $('.mortgage_js').on('click', function (event) {
+    $('.mortgage').addClass('active')
+  })
+
+  $('.video_js').on('click', function (event) {
+    $('.video').addClass('active')
   })
 })
