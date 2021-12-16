@@ -17,7 +17,7 @@
     position: relative;
     padding: 129px 20px 165px;
     h1 {
-      font-size: 42px;
+      font-size: 37px;
       margin: 0 0 10px;
       color: #ffffff;
       font-weight: 600;
@@ -123,6 +123,9 @@
   }
   @media (min-width: 375px) {
     .banner_content {
+      h1 {
+        font-size: 42px;
+      }
       a {
         padding: 0 23px 0 32px;
         .text {
@@ -1003,9 +1006,9 @@
       }
     }
     .infrastructure_item {
-      min-width: 335px;
-      width: 335px;
-      width: 335px;
+      min-width: 100%;
+      width: 100%;
+      max-width: 335px;
       height: 344px;
       //   margin: 0 10px;
       margin-right: 20px;
@@ -3075,6 +3078,7 @@
       position: relative;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
       &::after {
         content: '';
         top: 0;
