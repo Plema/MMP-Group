@@ -1160,6 +1160,15 @@
       }
     }
   }
+  @media (min-width: 375px) {
+    .infrastructure_content {
+      .infrastructure_items {
+        .infrastructure_item {
+          min-width: 335px;
+        }
+      }
+    }
+  }
   @media (min-width: 768px) {
     padding: 80px 0 50px;
     .title {
