@@ -427,10 +427,12 @@ $(document).ready(function () {
 
   $('.close').on('click', function (event) {
     $('.popup').removeClass('active')
+    $('video-wrapper iframe').attr('scr', '')
   })
 
   $('.close_popup').on('click', function (event) {
     $('.popup').removeClass('active')
+    $('video-wrapper iframe').attr('scr', '')
   })
 
   $('.house_layouts_js').on('click', function (event) {
@@ -450,6 +452,8 @@ $(document).ready(function () {
   })
 
   $('.video_js').on('click', function (event) {
+    var dataVideo = $(this).data('video')
+    $('video-wrapper iframe').attr('scr', dataVideo)
     $('.video').addClass('active')
   })
 })
