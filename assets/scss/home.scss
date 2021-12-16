@@ -2075,7 +2075,7 @@
         .foto {
           margin: 0;
           height: auto;
-          width: 33.3%;
+          width: 33%;
           display: flex;
           padding: 30px 10px;
           align-items: flex-end;
@@ -2166,7 +2166,7 @@
     .layouts_slider {
       .layouts_item {
         .foto {
-          width: 33.3%;
+          width: 33%;
           padding: 100px 8px 48px;
           &:last-child {
             width: 33.1%;
@@ -3098,6 +3098,7 @@
         backdrop-filter: blur(4px);
         background: rgba(0, 0, 0, 0.54);
         transition: all 0.7s;
+        max-width: 96%;
         h3 {
           font-weight: 600;
           font-size: 28px;
