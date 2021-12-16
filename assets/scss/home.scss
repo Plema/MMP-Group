@@ -965,7 +965,7 @@
   }
   .infrastructure_content {
     margin: 0 -20px 44px;
-    overflow-x: scroll;
+    // overflow-x: scroll;
     padding: 0 20px;
     .infrastructure_items {
       //   width: 1790px;
@@ -1961,7 +1961,7 @@
         }
         img {
           width: 100%;
-          display: none;
+          // display: none;
         }
       }
       a {
@@ -2907,6 +2907,7 @@
   @media (min-width: 1024px) {
     .portfolio_slider {
       .portfolio_slider_item {
+        min-height: 596px;
         .text {
           padding: 20px 15px 20px;
           background: rgba(0, 0, 0, 0.54);
