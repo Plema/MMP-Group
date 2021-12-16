@@ -1016,6 +1016,9 @@
       padding: 25px 16px;
       align-items: flex-end;
       justify-content: center;
+      &:last-child {
+        margin-right: 0;
+      }
       span {
         width: 100%;
         font-size: 18px;
