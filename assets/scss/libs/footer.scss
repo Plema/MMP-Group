@@ -425,6 +425,35 @@
       }
     }
   }
+  @media (min-width: 1600px) and (max-width: 1810px) {
+    .footer_content {
+      .addres {
+        p {
+          font-size: 16px;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+      .cont {
+        padding-right: 20px;
+        ul {
+          li {
+            a {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+      .watch {
+        ul {
+          li {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
   @media (min-width: 1800px) {
     padding: 0 48px;
   }
