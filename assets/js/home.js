@@ -435,8 +435,22 @@ $(document).ready(function () {
   //   $('video-wrapper iframe').attr('scr', '')
   // })
 
-  $('.house_layouts_js').on('click', function (event) {
-    $('.house_layouts').addClass('active')
+  $(window).resize(function () {
+    $('.portfolio_slider_item').matchHeight({
+      byRow: false,
+    })
+
+    $('.portfolio_slider_item .text h3').matchHeight({
+      byRow: false,
+    })
+  })
+
+  $('.portfolio_slider_item').matchHeight({
+    byRow: false,
+  })
+
+  $('.portfolio_slider_item .text h3').matchHeight({
+    byRow: false,
   })
 
   $('.calculation_js').on('click', function (event) {
@@ -453,17 +467,21 @@ $(document).ready(function () {
 
   $('.video_js').on('click', function (event) {
     var dataVideo = $(this).data('video')
-    $('video-wrapper iframe').attr('scr', dataVideo)
+    $('.video-wrapper iframe').attr('src', dataVideo)
     $('.video').addClass('active')
   })
 
   $('.close').on('click', function (event) {
     $('.popup').removeClass('active')
-    $('video-wrapper iframe').attr('scr', '')
+    $('.video-wrapper iframe').attr('src', '')
   })
 
   $('.close_popup').on('click', function (event) {
     $('.popup').removeClass('active')
-    $('video-wrapper iframe').attr('scr', '')
+    $('.video-wrapper iframe').attr('src', '')
+  })
+
+  $('.house_layouts_js').on('click', function (event) {
+    $('.house_layouts').addClass('active')
   })
 })
