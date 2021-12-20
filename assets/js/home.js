@@ -160,71 +160,6 @@ $(document).ready(function () {
       ],
     })
 
-    var housesLayoutsSlider = $('.houses_layouts_slider')
-
-    housesLayoutsSlider.on('init', function (event, slick) {
-      $('.houses_layouts_count').html(parseInt(slick.currentSlide + 1) + '<span>/' + slick.slideCount + '</span>')
-    })
-
-    housesLayoutsSlider.on('afterChange', function (event, slick, currentSlide) {
-      $('.houses_layouts_count').html(parseInt(slick.currentSlide + 1) + '<span>/' + slick.slideCount + '</span>')
-    })
-
-    housesLayoutsSlider.slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      nextArrow: '<button class="slick-arrow next"><i class="icon-arrow"></i></button>',
-      prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow"></i></button>',
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    })
-
-    var popupLayoutsSlider = $('.popup_layouts_slider')
-
-    popupLayoutsSlider.on('init', function (event, slick) {
-      $('.popup_layouts_count').html(parseInt(slick.currentSlide + 1) + '<span>/' + slick.slideCount + '</span>')
-    })
-
-    popupLayoutsSlider.on('afterChange', function (event, slick, currentSlide) {
-      $('.popup_layouts_count').html(parseInt(slick.currentSlide + 1) + '<span>/' + slick.slideCount + '</span>')
-    })
-
-    popupLayoutsSlider.slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      nextArrow: '<button class="slick-arrow next"><i class="icon-arrow"></i></button>',
-      prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow"></i></button>',
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    })
   }
 
   $('.discounted_slider').slick({
@@ -482,6 +417,74 @@ $(document).ready(function () {
   })
 
   $('.house_layouts_js').on('click', function (event) {
-    $('.house_layouts').addClass('active')
-  })
-})
+    $('.house_layouts').addClass('active');
+    if ($(window).width() < 1024) {
+  
+      var housesLayoutsSlider = $('.houses_layouts_slider')
+  
+      housesLayoutsSlider.on('init', function (event, slick) {
+        $('.houses_layouts_count').html(parseInt(slick.currentSlide + 1) + '<span>/' + slick.slideCount + '</span>')
+      })
+  
+      housesLayoutsSlider.on('afterChange', function (event, slick, currentSlide) {
+        $('.houses_layouts_count').html(parseInt(slick.currentSlide + 1) + '<span>/' + slick.slideCount + '</span>')
+      })
+  
+      housesLayoutsSlider.slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-arrow"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow"></i></button>',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      })
+  
+      var popupLayoutsSlider = $('.popup_layouts_slider')
+  
+      popupLayoutsSlider.on('init', function (event, slick) {
+        $('.popup_layouts_count').html(parseInt(slick.currentSlide + 1) + '<span>/' + slick.slideCount + '</span>')
+      })
+  
+      popupLayoutsSlider.on('afterChange', function (event, slick, currentSlide) {
+        $('.popup_layouts_count').html(parseInt(slick.currentSlide + 1) + '<span>/' + slick.slideCount + '</span>')
+      })
+  
+      popupLayoutsSlider.slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-arrow"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-arrow"></i></button>',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      })
+    }
+  });
+});
