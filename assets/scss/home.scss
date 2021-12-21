@@ -1298,9 +1298,14 @@
     }
     .infrastructure_content {
       margin: 0 0 35px;
+      // padding: 0;
       .infrastructure_items {
+        margin: 0 -20px;
+        justify-content: space-between;
         .infrastructure_item {
+          margin: 0;
           height: 345px;
+          min-width: 250px;
           span {
             font-size: 18px;
             line-height: 22px;
@@ -1332,6 +1337,15 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  @media (min-width: 1900px) {
+    .infrastructure_content {
+      .infrastructure_items {
+        .infrastructure_item {
+          min-width: 288px;
         }
       }
     }
