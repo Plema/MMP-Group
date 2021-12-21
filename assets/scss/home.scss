@@ -1187,7 +1187,7 @@
     .infrastructure_content {
       margin: 0 -10px 44px;
       .infrastructure_items {
-        width: 1775px;
+        // width: 1775px;
         padding: 0 0 55px;
       }
     }
@@ -1278,6 +1278,18 @@
       ul {
         li {
           padding: 0 40px 20px 20px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1600px) {
+    .infrastructure_content {
+      .infrastructure_items {
+        justify-content: space-between;
+        margin: 0 -20px;
+        .infrastructure_item {
+          min-width: 240px;
+          margin: 0;
         }
       }
     }
